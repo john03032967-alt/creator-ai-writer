@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AI Content Suite</title>
+
+<style>
+body{
+font-family:Arial,sans-serif;
+background:#f5f5f5;
+display:flex;
+justify-content:center;
+padding:30px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:20px;
+max-width:600px;
+width:100%;
+text-align:center;
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+input{
+width:90%;
+padding:15px;
+font-size:18px;
+border:1px solid #ccc;
+border-radius:10px;
+}
+
+button{
+background:#ff6b00;
+color:white;
+border:none;
+padding:15px 25px;
+font-size:18px;
+border-radius:10px;
+margin-top:15px;
+cursor:pointer;
+}
+
+#result{
+margin-top:20px;
+text-align:left;
+line-height:1.8;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<h1>🚀 AI Content Suite</h1>
+
+<input
+type="text"
+id="topic"
+placeholder="Enter Topic">
+
+<br><br>
+
+<button onclick="generateAll()">
+Generate All
+</button>
+
+<div id="result"></div>
+
+<br>
+
+<button onclick="copyAll()">
+📋 Copy All
+</button>
+
+</div>
+
+<script>
+
+function generateAll(){
+
+let topic=document.getElementById("topic").value;
+
+if(topic.trim()==""){
+alert("Enter Topic");
+return;
+}
+
+document.getElementById("result").innerHTML=
+
+"<h2>🔥 Viral Hooks</h2>" +
+
+"• Stop scrolling! This "+topic+" fact will shock you.<br>" +
+"• 99% people don't know this about "+topic+".<br>" +
+"• Biggest mistake in "+topic+".<br><br>" +
+
+"<h2>🎬 Reel Script</h2>" +
+
+"<b>Hook:</b> Learn "+topic+" in 30 seconds.<br>" +
+"<b>Main:</b> Share valuable information about "+topic+".<br>" +
+"<b>CTA:</b> Follow for more.<br><br>" +
+
+"<h2>✍️ Caption</h2>" +
+
+"🔥 "+topic+" is the key to consistency.<br>" +
+"💪 Keep improving every day.<br>" +
+"👇 Follow for more content.<br><br>" +
+
+"<h2>#️⃣ Hashtags</h2>" +
+
+"#"+topic+
+" #viral #reels #instagram #trending #growth";
+
+}
+
+function copyAll(){
+
+let text=document.getElementById("result").innerText;
+
+navigator.clipboard.writeText(text);
+
+alert("Copied!");
+}
+
+</script>
+
+</body>
+</html>
