@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hook Generator</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+font-family:Arial,sans-serif;
+background:#f5f5f5;
+text-align:center;
+padding:20px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
+max-width:500px;
+margin:auto;
+}
+
+input{
+width:90%;
+padding:12px;
+border:1px solid #ccc;
+border-radius:8px;
+}
+
+button{
+background:#ff6b00;
+color:white;
+border:none;
+padding:12px 25px;
+border-radius:8px;
+font-size:18px;
+cursor:pointer;
+margin-top:15px;
+}
+
+#result{
+margin-top:20px;
+font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<h1>🔥 Viral Hook Generator</h1>
+
+<input
+type="text"
+id="topic"
+placeholder="Enter Topic">
+
+<br><br>
+
+<button onclick="generateHooks()">
+Generate Hooks
+</button>
+
+<p id="result"></p>
+
+<br>
+
+<button onclick="copyHooks()">
+📋 Copy Hooks
+</button>
+
+</div>
+
+<script>
+
+function generateHooks(){
+
+let topic =
+document.getElementById("topic").value;
+
+if(topic.trim()==""){
+alert("Please enter a topic");
+return;
+}
+
+document.getElementById("result").innerHTML =
+"🔥 Stop scrolling! This " + topic + " fact will shock you.<br><br>" +
+"😲 99% people don't know this about " + topic + ".<br><br>" +
+"⚠️ The biggest mistake people make with " + topic + ".<br><br>" +
+"👀 Before you scroll, read this.<br><br>" +
+"🚀 This simple " + topic + " trick can change everything.";
+}
+
+function copyHooks(){
+
+let text =
+document.getElementById("result").innerText;
+
+navigator.clipboard.writeText(text);
+
+alert("Hooks copied!");
+}
+
+</script>
+
+</body>
+</html>
