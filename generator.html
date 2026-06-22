@@ -68,20 +68,21 @@ Generate Script
 </div>
 
 <script>
-function generateScript(){
+function generateScript() {
 
-let topic =
-document.getElementById("topic").value;
+let topic = document.getElementById("topic").value;
 
-if(topic==""){
+if(topic.trim() === ""){
 alert("Please enter a topic");
 return;
 }
 
 document.getElementById("result").innerHTML =
-"Demo Script: Today we are talking about " +
-topic +
-". This is where AI generated reel script will appear.";
+"<h3>Generated Reel Script</h3>" +
+"<p><b>Hook:</b> Stop scrolling! This " + topic + " fact will surprise you.</p>" +
+"<p><b>Main Content:</b> Today we are discussing " + topic + ". Share useful tips, examples and value for your audience.</p>" +
+"<p><b>CTA:</b> Follow for more content like this.</p>";
+
 }
 </script>
 
