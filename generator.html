@@ -64,7 +64,11 @@ Generate Script
 </button>
 
 <p id="result"></p>
+<br>
 
+<button onclick="copyScript()">
+📋 Copy Script
+</button>
 </div>
 
 <script>
@@ -82,6 +86,16 @@ document.getElementById("result").innerHTML =
 "<p><b>Hook:</b> Stop scrolling! This " + topic + " fact will surprise you.</p>" +
 "<p><b>Main Content:</b> Today we are discussing " + topic + ". Share useful tips, examples and value for your audience.</p>" +
 "<p><b>CTA:</b> Follow for more content like this.</p>";
+
+}
+function copyScript() {
+
+let text =
+document.getElementById("result").innerText;
+
+navigator.clipboard.writeText(text);
+
+alert("Script copied!");
 
 }
 </script>
