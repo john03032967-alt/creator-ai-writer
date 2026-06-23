@@ -45,6 +45,7 @@ cursor:pointer;
 margin-top:20px;
 text-align:left;
 line-height:1.8;
+white-space:pre-wrap;
 }
 </style>
 </head>
@@ -87,78 +88,25 @@ alert("Enter Topic");
 return;
 }
 
-if(topic.toLowerCase().includes("karbala")){
-
 document.getElementById("result").innerHTML=
+`
+<h2>🔥 Viral Hooks</h2>
+• Stop scrolling! ${topic} fact will shock you.<br>
+• 99% people don't know this about ${topic}.<br>
+• Biggest mistake in ${topic}.<br><br>
 
-"<h2>🔥 Viral Hooks</h2>" +
+<h2>🎬 Reel Script</h2>
+<b>Hook:</b> Learn ${topic} in 30 seconds.<br>
+<b>Main:</b> Share valuable information about ${topic}.<br>
+<b>CTA:</b> Follow for more.<br><br>
 
-"• Karbala ka ye waqia dil hila dega!<br>" +
-"• Imam Hussainؓ ne ye qurbani kyun di?<br>" +
-"• Karbala se milne wala sabse bara sabaq!<br><br>" +
+<h2>✍️ Caption</h2>
+🔥 ${topic} is the key to consistency.<br>
+💪 Keep improving every day.<br><br>
 
-"<h2>🎬 Reel Script</h2>" +
-
-"<b>Hook:</b> Kya aap jante hain? Karbala ka ye waqia dil hila dega!<br>" +
-"<b>Main:</b> Karbala hamein sabr, himmat aur sachai par qaim rehne ka dars deti hai.<br>" +
-"<b>CTA:</b> Page follow karein.<br><br>" +
-
-"<h2>✍ Caption</h2>" +
-
-"🕌 Karbala hamein haq par qaim rehna sikhati hai.<br>" +
-"🤲 Imam Hussainؓ ki qurbani qayamat tak yaad rahegi.<br><br>" +
-
-"<h2>#️⃣ Hashtags</h2>" +
-
-"#Karbala #ImamHussain #IslamicReels #Muharram #Islam";
-}
-else if(topic.toLowerCase().includes("fitness")){
-
-document.getElementById("result").innerHTML=
-
-"<h2>🔥 Viral Hooks</h2>" +
-"• Gym ja kar bhi result nahi mil rahe?<br>" +
-"• Fitness ki sabse bari ghalti kya hai?<br>" +
-"• Sirf 30 din me body transform kaise karein?<br><br>" +
-
-"<h2>🎬 Reel Script</h2>" +
-"<b>Hook:</b> Fitness me ye ghalti 90% log karte hain!<br>" +
-"<b>Main:</b> Consistency, proper diet aur sleep fitness ki asli key hain.<br>" +
-"<b>CTA:</b> Fitness tips ke liye follow karein.<br><br>" +
-
-"<h2>✍️ Caption</h2>" +
-"💪 Fitness ek journey hai.<br>" +
-"🔥 Roz thoda behtar bano.<br><br>" +
-
-"<h2>#️⃣ Hashtags</h2>" +
-"#Fitness #Gym #Workout #HealthyLifestyle #FitnessMotivation";
-}
-else{
-
-document.getElementById("result").innerHTML=
-
-"<h2>🔥 Viral Hooks</h2>" +
-
-"• Stop scrolling! This "+topic+" fact will shock you.<br>" +
-"• 99% people don't know this about "+topic+".<br>" +
-"• Biggest mistake in "+topic+".<br><br>" +
-
-"<h2>🎬 Reel Script</h2>" +
-
-"<b>Hook:</b> Learn "+topic+" in 30 seconds.<br>" +
-"<b>Main:</b> Share valuable information about "+topic+".<br>" +
-"<b>CTA:</b> Follow for more.<br><br>" +
-
-"<h2>✍ Caption</h2>" +
-
-"🔥 "+topic+" is the key to consistency.<br>" +
-"💪 Keep improving every day.<br><br>" +
-
-"<h2>#️⃣ Hashtags</h2>" +
-
-"#"+topic+" #viral #reels #instagram #trending";
-}
-
+<h2>#️⃣ Hashtags</h2>
+#${topic} #viral #reels #instagram #trending
+`;
 }
 
 function copyAll(){
