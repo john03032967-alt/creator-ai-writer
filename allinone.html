@@ -87,6 +87,33 @@ alert("Enter Topic");
 return;
 }
 
+if(topic.toLowerCase().includes("karbala")){
+
+document.getElementById("result").innerHTML=
+
+"<h2>🔥 Viral Hooks</h2>" +
+
+"• Karbala ka ye waqia dil hila dega!<br>" +
+"• Imam Hussainؓ ne ye qurbani kyun di?<br>" +
+"• Karbala se milne wala sabse bara sabaq!<br><br>" +
+
+"<h2>🎬 Reel Script</h2>" +
+
+"<b>Hook:</b> Kya aap jante hain? Karbala ka ye waqia dil hila dega!<br>" +
+"<b>Main:</b> Karbala hamein sabr, himmat aur sachai par qaim rehne ka dars deti hai.<br>" +
+"<b>CTA:</b> Page follow karein.<br><br>" +
+
+"<h2>✍ Caption</h2>" +
+
+"🕌 Karbala hamein haq par qaim rehna sikhati hai.<br>" +
+"🤲 Imam Hussainؓ ki qurbani qayamat tak yaad rahegi.<br><br>" +
+
+"<h2>#️⃣ Hashtags</h2>" +
+
+"#Karbala #ImamHussain #IslamicReels #Muharram #Islam";
+}
+else{
+
 document.getElementById("result").innerHTML=
 
 "<h2>🔥 Viral Hooks</h2>" +
@@ -101,16 +128,15 @@ document.getElementById("result").innerHTML=
 "<b>Main:</b> Share valuable information about "+topic+".<br>" +
 "<b>CTA:</b> Follow for more.<br><br>" +
 
-"<h2>✍️ Caption</h2>" +
+"<h2>✍ Caption</h2>" +
 
 "🔥 "+topic+" is the key to consistency.<br>" +
-"💪 Keep improving every day.<br>" +
-"👇 Follow for more content.<br><br>" +
+"💪 Keep improving every day.<br><br>" +
 
 "<h2>#️⃣ Hashtags</h2>" +
 
-"#"+topic+
-" #viral #reels #instagram #trending #growth";
+"#"+topic+" #viral #reels #instagram #trending";
+}
 
 }
 
