@@ -87,7 +87,7 @@ try {
 
 const response = await fetch(
 "https://creator-ai-api.john03032967.workers.dev",
-{
+  {
 method: "POST",
 headers: {
 "Content-Type": "application/json"
@@ -102,11 +102,10 @@ topic +
 );
 
 const data = await response.json();
+console.log(data);
 
 document.getElementById("result").innerHTML =
-"<h3>🔥 AI Reel Script</h3><p>" +
-data.response +
-"</p>";
+JSON.stringify(data);
 
 }
 catch(error){
